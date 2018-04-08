@@ -3,7 +3,7 @@ class Dog
   @@dogs = []
 
   def initialize (name, breed, age)
-    dog = Dog.create(name, breed, age)
+    dog = self.create(name, breed, age)
     @@dogs << dog
   end
 
@@ -13,7 +13,7 @@ class Dog
 
   private
 
-  def self.create (name, breed, age)
+  def create (name, breed, age)
     @name = name
     @breed = breed
     @age = age
